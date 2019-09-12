@@ -9,7 +9,7 @@ class Square extends Component {
             backgroundColor : 'white' 
         };
         return (
-            <button  style={style}>{this.props.value}</button>
+            <button onClick={()=>{this.props.click(this.props.nkey)}}  style={style}>{this.props.value}</button>
         );
     }
 }
